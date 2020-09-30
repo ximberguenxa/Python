@@ -1,0 +1,9 @@
+mitupla=["España"]
+midiccionario={mitupla[0]:"Madrid", "Alemania":"Berlín", "Francia":"París"}
+midiccionario["Italia"]="Lisboa"
+print(midiccionario)
+midiccionario["Italia"]="Roma"
+print(midiccionario)
+del midiccionario["Francia"]
+print(midiccionario)
+print(midiccionario["Alemania"])
