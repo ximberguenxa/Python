@@ -7,3 +7,9 @@ print(midiccionario)
 del midiccionario["Francia"]
 print(midiccionario)
 print(midiccionario["Alemania"])
+
+--------------------------------------------------------------------------------
+
+
+midiccionario={23:"Jordan", "Nombre":"Michael", "anillos":{"temporadas":[10,9,8,7,6,5]}}
+print(midiccionario)
