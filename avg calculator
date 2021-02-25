@@ -1,0 +1,33 @@
+def calcular():
+	global continuar
+	import time
+	from time import sleep
+	lista = []
+	n = int(input("nota nº0 = |")) 
+	lista.append(n)
+	print("-----------------------")
+	print(lista)
+	print("-----------------------")
+	nº=0
+	while True:
+		try:
+			nº += 1
+			n = int(input(f"nota nº{nº} = |"))
+			lista.append(n)
+			print("-----------------------")
+			print(lista)
+			print("-----------------------")
+		except ValueError:
+			break
+	if len(lista) > 0:
+		avg = sum(lista)/len(lista)
+		print("-----------------------")
+		print(f"Your avarage is |{avg}")
+	continuar = input("Continuar?")
+	if not continuar:
+		print("///////////////////////")
+		calcular()
+	else:
+		print("Cerrando ...")
+		sleep(2)
+calcular()
